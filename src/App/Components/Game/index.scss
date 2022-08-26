@@ -1,0 +1,43 @@
+.game-state-count {
+  
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px 15px;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-brown {
+  background-color: brown;
+}
+.bg-blue {
+  background-color: blue;
+}
+
+.card,
+.show-card-btn {
+  display: inline-block;
+  width: 238px;
+  height: 349px;
+  background-color: black;
+  background-size: contain;
+}
+
+.show-card-btn {
+  margin-right: 10px;
+  background: url('../../../assets/mythicCardBackground.png');
+  cursor: pointer;
+}
+
+.stage-wrapper {
+  &.stage-complited {
+    opacity: .5
+  }
+  &.stage-active {
+    .stage-name {
+      color: red;
+    }
+  }
+}
