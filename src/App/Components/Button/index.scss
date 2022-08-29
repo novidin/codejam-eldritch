@@ -1,3 +1,16 @@
+.button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: bisque;
+  background: transparent;
+  border: 2px solid bisque;
+  cursor: pointer;
+  transition: all .3s;
+  &:Hover {
+    color: red;
+  }
+}
+
 .active-button {
-  box-shadow: 1px 1px 1px red;
+  box-shadow: 0px 1px 10px 2px red;
 }
