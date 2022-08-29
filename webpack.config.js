@@ -16,7 +16,7 @@ module.exports = {
     //owfont:'./src/css/owfont-regular.css'
   },
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'build/codejam-eldritch'),
     filename: '[name].[contenthash].js',
     assetModuleFilename: 'assets/[name][ext]'
   },

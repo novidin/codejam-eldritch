@@ -20,7 +20,6 @@ export const createCardSet = (state) => {
 
   const getVeryEasySet = (colorCardData) => {
     const countSetCards = getAncientCountCards(`${colorCardData[0].color}Cards`);
-    //const easyCards = colorCardData.filter(el => el.difficulty === 'easy');
     const easyCardSet = [...colorCardData.filter(el => el.difficulty === 'easy'), ...colorCardData.filter(el => el.difficulty === 'normal')]
     easyCardSet.slice(0, countSetCards);
     return shuffleArray(easyCardSet)

@@ -13,7 +13,7 @@ export class GameSet extends BaseComponent {
       thirdStage: 'Этап 3'
     }
 
-    console.log(this.cardSet)
+    //console.log(this.cardSet)
     this.gameStateTable = new BaseComponent(this.node, 'div', 'game-state');
     this.showGameStateTable()
 
