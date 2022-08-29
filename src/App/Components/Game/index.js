@@ -22,7 +22,6 @@ export class GameSet extends BaseComponent {
     this.cardBtn.node.onclick = () => {
       let card;
       Object.keys(this.cardSet).forEach(stage => {
-        
         if (this.cardSet[stage].length && !card) {
           card = this.cardSet[stage].pop();
           this.showCard(card);
@@ -53,10 +52,8 @@ export class GameSet extends BaseComponent {
       `
     })
   }
-
   
   showCard(card) {
     this.card.node.style.backgroundImage = `url('${card.cardFace}')`;
   }
-
 }

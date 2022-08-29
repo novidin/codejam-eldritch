@@ -3,13 +3,9 @@ import difficulties from "../data/difficulties";
 import BaseComponent from "./Components/BaseComponent";
 import { Button } from "./Components/Button";
 import { AncientCard } from "./Components/AncientCard";
-//import { DifficultyMenu } from "./Components/DifficultyMenu";
 import { createCardSet } from "./utils/createCardSet.js";
 import { GameSet } from "./Components/Game";
 import './index.scss';
-
-
-
 
 export class App {
   constructor() {
@@ -38,7 +34,6 @@ export class App {
       }
       if (ancientCard.data.id === this.state.Ancinent.id) ancientCard.node.classList.add('ancient-card_active');
     })
-
   }
 
   createDifficultyMenu() {
@@ -56,7 +51,6 @@ export class App {
   }
 
   createStartBtn() {
-    
     if (!this.state.Ancinent) {
       this.gameField.node.innerHTML = '<h2>Для начала игры выберите карту древнего</h2>'
       return
@@ -68,6 +62,5 @@ export class App {
       startBtn.destroy();
     })
   }
-  
 }
 
