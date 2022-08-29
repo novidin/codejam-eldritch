@@ -4,4 +4,4 @@ import './index.scss';
 
 document.addEventListener('DOMContentLoaded', () => {
   new App();
-})
+});
